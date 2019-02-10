@@ -1,1 +1,7 @@
 .DS_Store
+hardware.asc
+hardware.bin
+hardware.blif
+install_apio.bat
+install_apio.sh
+.sconsign.dblite
