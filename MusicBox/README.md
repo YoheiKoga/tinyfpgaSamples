@@ -1,4 +1,5 @@
 ### simple beep
 
-this is referenced by [fpga4fun.com - Music box 1 - Simple beep](https://www.fpga4fun.com/MusicBox1.html)
+this is referenced by [fpga4fun.com - Music box](https://www.fpga4fun.com/MusicBox.html)
 
+I connected Beep device(piezoelectric loudspeaker) plus line to A1 pin on TinyFPGA-BX
