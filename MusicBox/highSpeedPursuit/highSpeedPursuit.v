@@ -6,15 +6,16 @@ module music (
 );
     // parameter CLKDIVIDER = 16000000/440/2;
 
-    reg[22:0] tone;
+    reg[27:0] tone;
     always @(posedge CLK) begin
         tone <= tone+1;
     end
 
-    wire [4:0] ramp = (ton[22] ? tone[21:15] : ~tone[21:15]);
-    wire [16:0] clkdivider = {2'b01, ramp, 6'b000000};
+    wire[6:0] fastsweep = (tone[22] ? tone[21:15] : ~tone[21:15]);
+    wire[6:0] slowsweep = (tone[25] ? tone[24:18] : ~tone[24:18]);
+    wire[14:0] clkdivider = {2'b01, (tone[27] ? slowsweep : fastsweep), 6'b000000};
 
-    reg[16:0] counter;
+    reg[14:0] counter;
     always @(posedge CLK) begin
         if(counter==0) begin
             counter <= clkdivider;
