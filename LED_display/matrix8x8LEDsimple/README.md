@@ -3,3 +3,5 @@ I wrote verilog for simple 8x8 dot matrix LED by referenced [fpga4fun.com - Opto
 I use PIN_1 to PIN_8 and GND, so this code output only line blink, no dot blink.
 
 If you want to blink by dot to dot, you have to use more 8 pins for row signal.
+
+![](https://github.com/YoheiKoga/tinyfpgaSamples/blob/images/images/matrix8x8LEDsimple.jpg)
