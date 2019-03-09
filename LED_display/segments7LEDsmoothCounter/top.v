@@ -3,14 +3,15 @@ module top (
     input CLK,    // 16MHz clock
     // output LED,   // User/boot LED next to power LED
     // output USBPU  // USB pull-up resistor
-    output segA,
-    output segB, 
-    output segC, 
-    output segD, 
-    output segE, 
-    output segF, 
-    output segG, 
-    output segDP
+    // output segA,
+    // output segB, 
+    // output segC, 
+    // output segD, 
+    // output segE, 
+    // output segF, 
+    // output segG, 
+    // output segDP
+    output segA, segB, segC, segD, segE, segF, segG, segDP
 );
 
     // cnt is used as a prescalar
